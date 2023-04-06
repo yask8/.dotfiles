@@ -1,6 +1,8 @@
 #!/bin/bash
 
-
-rm -r ~/.vimrc
-sed 's/source ∼ /.dotfiles/bashrc_custom//g'
-rm -r ~/.TRASH
+#Removing the .vimrc directory
+rm -rf ~/.vimrc
+#Modifying the source file
+sed -n s/\source~*/\/g ~/.bashrc
+#Removing trash directory
+rm -rf ~/.TRASH
