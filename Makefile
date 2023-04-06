@@ -1,5 +1,6 @@
-linux:
+#Linux target with a dependency clean
+linux: clean
 	./bin/linux.sh
-
-clean: linux
+#Clean target
+clean: 
 	./bin/cleanup.sh
